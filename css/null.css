@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+main {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1540px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+} /*# sourceMappingURL=null.css.map */

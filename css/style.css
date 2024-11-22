@@ -1,0 +1,243 @@
+@import url("/css/null.css");
+* {
+  font-family: "Geologica";
+}
+
+body {
+  row-gap: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  padding: 0 55px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #d9d9d9;
+  padding: 10px 55px;
+  border-radius: 0 0 25px 25px;
+}
+header .nav {
+  height: 100%;
+  min-height: 83px;
+  max-height: 190px;
+  align-items: center;
+  --bs-nav-tabs-border-color: none;
+  gap: 70px;
+  row-gap: 10px;
+}
+header .nav .nav-link {
+  color: black;
+}
+header .nav .nav-link.active, header .nav .nav-link:hover {
+  border-radius: var(--bs-nav-tabs-border-radius);
+}
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.carousel img {
+  border-radius: 5vh;
+}
+
+.container {
+  position: relative;
+  width: 900px;
+}
+.container .slaider {
+  position: relative;
+  width: inherit;
+  height: 595px;
+  overflow: hidden;
+  /* overflow-x: scroll; */
+  margin: 0 auto;
+}
+.container .slaider .slaides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  transition: 1s;
+}
+.container .slaider .slaides .slaide {
+  width: 25%;
+}
+.container .slaider .slaides .slaide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+.container .buttons-slaider {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: inherit;
+  height: 30px;
+  margin-top: 15px;
+}
+.container .buttons-slaider .count-btn {
+  height: 10px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.container .buttons-slaider .click-btn {
+  background-color: black;
+}
+.container .buttons-slaider-rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  height: 595px;
+  position: absolute;
+  padding: 0 25px;
+  top: 0;
+  z-index: 1;
+}
+.container .buttons-slaider-rows img {
+  width: 100px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  row-gap: 30px;
+}
+.content .card {
+  width: 302px;
+  border: none;
+}
+.content .card .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .card .info > img {
+  border-radius: 50%;
+}
+.content .card .card-body {
+  padding: 0px;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 120px;
+  border-radius: 25px 25px 0 0;
+  background-color: #D9D9D9;
+}
+footer ul > li .nav-link {
+  padding: 0;
+  text-align: left;
+  font-size: larger;
+  font-weight: 500;
+  color: black;
+}
+footer ul > li .nav-link:hover {
+  color: #000;
+}
+footer ul > li ul.nav {
+  display: flex;
+  align-items: flex-start;
+  color: #4E4E4E;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  row-gap: 0;
+}
+.catalog .img-fluid {
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form form {
+  padding: 50px;
+  border-radius: 50px;
+  background-color: #d9d9d9;
+}
+.form form input {
+  background-color: #ebebeb;
+}
+.form form .form-check {
+  position: relative;
+}
+.form form .form-check .form-check-input {
+  position: absolute;
+  top: 25%;
+  padding-left: 15px;
+  width: 20px;
+  height: 20px;
+}
+.form form .form-check .form-check-label {
+  padding-left: 5px;
+}
+.form form .btn {
+  padding: 10px 40px;
+  border-radius: 50px;
+  border-color: transparent;
+  color: #000;
+  background-color: #8e8e8e;
+}
+
+.popup {
+  display: none;
+}
+.popup .popup-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5294117647);
+}
+.popup .popup-body .popup-content {
+  position: relative;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+}
+.popup .popup-body .popup-content .popup-title {
+  margin-top: 0px;
+  font-size: 40px;
+  color: black;
+}
+.popup .popup-body .popup-content .popup-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+  color: black;
+}
+
+@font-face {
+  font-family: "Geologica";
+  src: url("/fonts/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf");
+}/*# sourceMappingURL=style.css.map */
